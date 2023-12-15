@@ -1,0 +1,129 @@
+* {
+    font-family: 'Saira', Arial, sans-serif;
+    background-color: rgb(11, 11, 11);
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    scroll-padding-top: 2rem;
+    transition: .3s ease;
+}
+:root {
+    --swiper-theme-color: #007aff;
+    --swiper-navigation-size: 44px;
+    --toastify-color-light: #fff;
+    --toastify-color-dark: #121212;
+    --toastify-color-info: #3498db;
+    --toastify-color-success: #07bc0c;
+    --toastify-color-warning: #f1c40f;
+    --toastify-color-error: #e74c3c;
+    --toastify-color-transparent: hsla(0,0%,100%,.7);
+    --toastify-icon-color-info: var(--toastify-color-info);
+    --toastify-icon-color-success: var(--toastify-color-success);
+    --toastify-icon-color-warning: var(--toastify-color-warning);
+    --toastify-icon-color-error: var(--toastify-color-error);
+    --toastify-toast-width: 320px;
+    --toastify-toast-background: #fff;
+    --toastify-toast-min-height: 64px;
+    --toastify-toast-max-height: 800px;
+    --toastify-font-family: sans-serif;
+    --toastify-z-index: 9999;
+    --toastify-text-color-light: #757575;
+    --toastify-text-color-dark: #fff;
+    --toastify-text-color-info: #fff;
+    --toastify-text-color-success: #fff;
+    --toastify-text-color-warning: #fff;
+    --toastify-text-color-error: #fff;
+    --toastify-spinner-color: #616161;
+    --toastify-spinner-color-empty-area: #e0e0e0;
+    --toastify-color-progress-light: linear-gradient(90deg,#4cd964,#5ac8fa,#007aff,#34aadc,#5856d6,#ff2d55);
+    --toastify-color-progress-dark: #bb86fc;
+    --toastify-color-progress-info: var(--toastify-color-info);
+    --toastify-color-progress-success: var(--toastify-color-success);
+    --toastify-color-progress-warning: var(--toastify-color-warning);
+    --toastify-color-progress-error: var(--toastify-color-error);
+}
+:host, :root {
+    --fa-style-family-classic: "Font Awesome 6 Free";
+    --fa-font-solid: normal 900 1em/1 "Font Awesome 6 Free";
+    --fa-font-regular: normal 400 1em/1 "Font Awesome 6 Free";
+    --fa-font-brands: normal 400 1em/1 "Font Awesome 6 Brands";
+  }
+.navigation {
+    display: flex;
+    -moz-box-pack: justify;
+    justify-content: space-between;
+    -moz-box-align: center;
+    align-items: center;
+    height: 100%;
+}
+
+.header-section {
+    background-color: rgb(11, 11, 11);
+    box-shadow: rgba(61, 61, 61, 0.25) 0px 4px 4px;
+    position: fixed;
+    width: 100%;
+    padding: 1rem 0; /* padding para visibilidade */
+    top: 0;
+    z-index: 2;
+}
+
+.brand {
+    font-size: 2rem;
+    cursor: pointer;
+    margin-top: 0px;
+    font-weight: lighter;
+    margin-left: 0px;
+    
+}
+
+.centralizer {
+    margin: 0 auto;
+    max-width: 1000px;
+    padding: 0 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+span {
+    color: rgb(0, 173, 111);
+    font-size: larger;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 1,0rem;
+    font-weight: 500;
+}
+
+ul {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+}
+.Links {
+    position: relative;
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    overflow: hidden;
+}
+
+.Links::before {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 5px; /* Ajuste a altura conforme desejado */
+    bottom: -2px;
+    left: 0;
+    background: linear-gradient(to right, transparent, rgb(0, 173, 111), transparent);
+    transition: width 0.3s ease;
+}
+.Links:hover::before {
+    width: 100%;
+}
