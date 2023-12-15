@@ -1,15 +1,21 @@
-document.addEventListener('DOMContentLoaded', function () {
-    const verMaisButton = document.querySelector('.vermais');
-    const aboutText = document.querySelector('.about-text');
+        // Espera até que o DOM esteja carregado
+        document.addEventListener('DOMContentLoaded', function() {
+            // Select button
+            var button = document.getElementById('vermais');
 
-    verMaisButton.addEventListener('click', function () {
-        aboutText.classList.toggle('collapsed');
-        aboutText.classList.toggle('expanded');
+            // Click Event
+            button.addEventListener('click', function() {
+                // Select extra content
+                var extraContent = document.getElementById('extra-content');
+                
+                // Add/Remove Class Hidden
+                extraContent.classList.toggle('hidden');
 
-        if (aboutText.classList.contains('collapsed')) {
-            verMaisButton.innerText = 'Ver mais';
-        } else {
-            verMaisButton.innerText = 'Ver menos';
-        }
-    });
-});
+                // Change button text
+                if (extraContent.classList.contains('hidden')) {
+                    button.textContent = 'Ver mais';
+                } else {
+                    button.textContent = 'Ver menos';
+                }
+            });
+        });
