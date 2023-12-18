@@ -1,21 +1,9 @@
-// Espera até que o DOM esteja carregado
 document.addEventListener('DOMContentLoaded', function() {
-    // Select button
-    var button = document.getElementById('vermais');
+    var button = document.querySelector('#vermais');
+    var extraContent = document.querySelector('#extra-content');
 
-    // Click Event
     button.addEventListener('click', function() {
-        // Select extra content
-        var extraContent = document.getElementById('extra-content');
-        
-        // Add/Remove Class Hidden
         extraContent.classList.toggle('hidden');
-
-        // Change button text
-        if (extraContent.classList.contains('hidden')) {
-            button.textContent = 'Ver mais';
-        } else {
-            button.textContent = 'Ver menos';
-        }
+        button.textContent = extraContent.classList.contains('hidden') ? 'Ver mais' : 'Ver menos';
     });
 });

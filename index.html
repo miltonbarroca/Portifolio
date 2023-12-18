@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio | Milton Barroca</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    
 </head>
 <body>
     <header class="header-section">
@@ -20,18 +20,13 @@
             <nav class="navigation">
                 <ul>
                     <li>
-                        <a class="Links" href="#">
+                        <a class="Links" href="index.html">
                             Início
                         </a>
                     </li>
                     <li>
                         <a class="Links" href="#about">
                             Sobre mim
-                        </a>
-                    </li>
-                    <li>
-                        <a class="Links" href="#">
-                            Experiências
                         </a>
                     </li>
                     <li>
@@ -119,19 +114,48 @@
         </div>
     </section>
     
-    <section id="experiencias">
-        <div class="titulo-experiencias">
-            <a class="experiences">
+    <section id="projetos">
+        <div class="titulo-projetos">
+            <a class="projects">
                 <span>&lt;!--</span>
-                Experiências
+                Projetos
                 <span>--&gt;</span>
             </a>
         </div>
+    
+        <div class="projetos-carousel">
+            <input type="radio" name="slider" id="s1">
+            <input type="radio" name="slider" id="s2">
+            <input type="radio" name="slider" id="s3">
+            <div class="cards">
+                <label for="s1" id="slide1">
+                    <div class="card">
+                        <div class="image">
+                            <img src="images/portfolio.png" alt="portfolio">
+                            <div class="dots">
+                                
+                            </div>
+                        </div>
+                        <div class="infos">
+                            <span class="name">Portfólio</span>
+                            <span class="lorem">lorem aosudhaoushdoaudhsaousd</span>
+                             <a href="/details" class="btn-details">details</a>
+                        </div>
+                    </div>
+                </label>
+            </div>
+        </div>
+    </section>
+    
+
     
     </section>
     
     <footer>
         <p>&copy; 2024 Milton Barroca</p>
     </footer>
+    
+    
+    <script src="script.js" defer></script>
 </body>
 </html>

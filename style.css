@@ -189,7 +189,7 @@ main {
 .hidden {
     display: none;
 }
-.estilocomentario {
+.estilocomentario, .projects {
     font-family: 'Courier New', monospace; /* Usando uma fonte monoespaçada para simular código */
     color: rgb(150, 150, 150); /* Cor mais clara para simular um comentário */
     font-style: italic; /* Itálico para indicar que é um comentário */
@@ -218,7 +218,7 @@ main {
     margin: 1.5rem auto; /* Adicione margem para centralizar o texto */
 }
 /* Estilo para a seção de sobre mim */
-#about {
+#about, #projetos {
     background-color: rgb(11, 11, 11);
     color: rgb(255, 255, 255);
     padding: 50px 0; /* Ajuste conforme necessário */
@@ -227,7 +227,7 @@ main {
     /*margin: 0 0 0 -29%;*/
 }
 /* Estilo para o container .sobremim */
-.sobremim {
+.sobremim, .titulo-projetos {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -287,7 +287,93 @@ main {
     box-shadow: 0 0 5px 2px rgba(0, 173, 111, 0.5);
 }
 /* FIM DO SOBRE MIM-----------------------------------------------------------------------*/
+/* Estilo para a seção de projetos */
+#projetos {
+    background-color: #f2f2f2;
+    padding: 20px;
+}
 
+/* Estilo para o título dos projetos */
+.titulo-projetos {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Estilo para o link do título dos projetos */
+.projects {
+    font-size: 24px;
+    color: #333;
+    text-decoration: none;
+}
+
+.projects span {
+    color: #999;
+}
+
+/* Estilo para o container do carrossel de projetos */
+.projetos-carousel {
+    display: flex;
+    justify-content: center;
+}
+
+/* Estilo para os cards */
+.cards {
+    display: flex;
+}
+
+/* Estilo para cada card */
+.card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 0 25px; /* Reduzi a margem */
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    max-width: 200px; /* Defini um tamanho máximo para o card */
+}
+
+/* Estilo para a imagem dentro do card */
+.card .image img {
+    width: 100%;
+    height: auto;
+}
+
+/* Estilo para a seção de informações dentro do card */
+.card .infos {
+    padding: 10px; /* Reduzi o preenchimento */
+}
+
+/* Estilo para o nome do projeto */
+.card .infos .name {
+    font-size: 14px; /* Reduzi o tamanho da fonte */
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 4px; /* Reduzi a margem inferior */
+}
+
+/* Estilo para a descrição do projeto */
+.card .infos .lorem {
+    font-size: 12px; /* Reduzi o tamanho da fonte */
+    color: #666;
+}
+
+/* Estilo para o link "details" dentro do card */
+.card .infos .btn-details {
+    display: block;
+    margin-top: 6px; /* Reduzi a margem superior */
+    padding: 6px 8px; /* Reduzi o preenchimento */
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    text-align: center;
+    transition: background-color 0.3s ease-in-out;
+    font-size: 12px; /* Reduzi o tamanho da fonte */
+}
+
+.card .infos .btn-details:hover {
+    background-color: #0056b3;
+}
 
 footer {
     position: fixed;
