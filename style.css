@@ -1,13 +1,13 @@
 * {
     font-family: 'Saira', Arial, sans-serif;
     box-sizing: border-box;
-    margin: 0;
     padding: 0;
     scroll-behavior: smooth;
     scroll-padding-top: 2rem;
     transition: .3s ease;
     z-index: 1;
 }
+
 body {
     font-family: 'Saira', Arial, sans-serif;
     background-color: rgb(11, 11, 11);
@@ -30,9 +30,9 @@ body {
     box-shadow: rgba(61, 61, 61, 0.25) 0px 4px 4px;
     position: fixed;
     width: 100%;
-    padding: 1rem 0; /* padding para visibilidade */
+    padding: 1,9rem 0; /* Ajuste o valor do padding conforme necessário */
     top: 0;
-    z-index: 1000; /* Ajuste conforme necessário (valor maior do que o z-index de .Links) */
+    z-index: 1000; /* Ajuste conforme necessário */
 }
 
 span {
@@ -107,7 +107,7 @@ main {
     margin-top: 70px; /* Ajuste conforme necessário para o espaçamento desejado */
 }
 
-.container {
+.containermain {
     width: 80%; /* Ajuste a largura conforme necessário */
     max-width: 800px; /* Adicione uma largura máxima para controle em telas grandes */
     margin: 0 0 0 -29%; /* Use porcentagem para ajustar a margem à esquerda responsivamente */
@@ -126,21 +126,22 @@ main {
     justify-content: space-between;
     -moz-box-align: center;
     align-items: center;
-    margin: 2rem 0px;
+    margin: 1rem 0px;
 }
 
 .milton {
     font-size: 3.7rem;
     color: rgb(255, 255, 255);
+    margin-bottom: -0.5rem; /* Reduz a margem inferior */
 }
 
 .desenvolvedor {
     color: rgb(0, 173, 111);
     font-size: 2rem;
-    margin-top: -1.5rem;
+    margin-top: -0.5rem; /* Reduz a margem superior */
     position: relative;
     text-shadow: rgb(0, 173, 111) 0px 0px 10px;
-    margin: 0 0 0 -16%; /* Use porcentagem para ajustar a margem à esquerda responsivamente */
+    margin: 0 0 0 -15%; /* Use porcentagem para ajustar a margem à esquerda responsivamente */
 }
 .socials {
     display: flex;
@@ -287,105 +288,81 @@ main {
     box-shadow: 0 0 5px 2px rgba(0, 173, 111, 0.5);
 }
 /* FIM DO SOBRE MIM-----------------------------------------------------------------------*/
-/* Estilo para a seção de projetos */
-#projetos {
-    background-color: #f2f2f2;
+.containerprojetos {
+    display: flex;
+    justify-content: space-between;
     padding: 20px;
+    margin: 10px 10%;
 }
 
-/* Estilo para o título dos projetos */
-.titulo-projetos {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-/* Estilo para o link do título dos projetos */
-.projects {
-    font-size: 24px;
-    color: #333;
-    text-decoration: none;
-}
-
-.projects span {
-    color: #999;
-}
-
-/* Estilo para o container do carrossel de projetos */
-.projetos-carousel {
-    display: flex;
-    justify-content: center;
-}
-
-/* Estilo para os cards */
-.cards {
-    display: flex;
-}
-
-/* Estilo para cada card */
 .card {
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    margin: 0 25px; /* Reduzi a margem */
-    overflow: hidden;
+    border-radius: 0px;
+    width: 250px;
+    height: 300px;
+    background-color: rgb(11, 11, 11);
+    margin: 0;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;
-    max-width: 200px; /* Defini um tamanho máximo para o card */
+    transition: all 0.3s ease;
+    overflow: hidden;
+    border: 2px solid rgb(0, 100, 50);
+    position: relative;
 }
 
-/* Estilo para a imagem dentro do card */
-.card .image img {
-    width: 100%;
-    height: auto;
-}
-
-/* Estilo para a seção de informações dentro do card */
-.card .infos {
-    padding: 10px; /* Reduzi o preenchimento */
-}
-
-/* Estilo para o nome do projeto */
-.card .infos .name {
-    font-size: 14px; /* Reduzi o tamanho da fonte */
-    font-weight: bold;
-    color: #333;
-    margin-bottom: 4px; /* Reduzi a margem inferior */
-}
-
-/* Estilo para a descrição do projeto */
-.card .infos .lorem {
-    font-size: 12px; /* Reduzi o tamanho da fonte */
-    color: #666;
-}
-
-/* Estilo para o link "details" dentro do card */
-.card .infos .btn-details {
-    display: block;
-    margin-top: 6px; /* Reduzi a margem superior */
-    padding: 6px 8px; /* Reduzi o preenchimento */
-    background-color: #007bff;
+.card:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2), 0 0 10px rgba(0, 173, 109, 0.719);
+    background-color: rgb(11, 11, 11);
     color: #fff;
-    text-decoration: none;
-    border-radius: 4px;
+}
+
+.card h2 {
+    margin-top: 20px;
+    color: rgb(0, 173, 111);
     text-align: center;
-    transition: background-color 0.3s ease-in-out;
-    font-size: 12px; /* Reduzi o tamanho da fonte */
+    position: relative;
 }
 
-.card .infos .btn-details:hover {
-    background-color: #0056b3;
+.card2::before,
+.card3::before {
+    content: "Em Breve";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+    background-color: rgb(0, 173, 111);
+    color: #fff;
+    padding: 10px 170px; /* Ajuste o tamanho do preenchimento conforme desejado */
+    font-size: 18px; /* Ajuste o tamanho da fonte conforme desejado */
+    font-style: italic;
+    z-index: 1;
+    white-space: nowrap;
 }
 
+.card p {
+    margin: 10px;
+    color: #ddd;
+    font-size: 14px;
+}
+
+.card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+/*fim da seção de cards de projetos==================================*/
 footer {
     position: fixed;
-    bottom: 0;
+    bottom: -1px; /* Ajuste negativo para trazer mais para cima */
     width: 100%;
     text-align: center;
     color: rgb(255, 255, 255);
     background-color: rgb(11, 11, 11);
-    padding: 7px; /* Ajuste conforme necessário */
-    box-shadow: rgba(61, 61, 61, 0.25) 0px -4px 4px; /* Ajuste da sombra para se parecer com o cabeçalho */
-   
+    padding: 0;
+    box-shadow: rgba(61, 61, 61, 0.15) 0px -2px 2px; /* Ajuste da sombra */
+    font-size: x-small;
 }
+
 
 /*:root {
     --swiper-theme-color: #007aff;
