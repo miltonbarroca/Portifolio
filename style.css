@@ -184,6 +184,7 @@ main {
     -webkit-box-pack: center;
     justify-content: center;
     padding: 3rem 0px;
+    margin-left: 0; /* ou ajuste conforme necessário */
 }
 .hidden {
     display: none;
@@ -222,6 +223,8 @@ main {
     color: rgb(255, 255, 255);
     padding: 50px 0; /* Ajuste conforme necessário */
     text-align: center;
+    margin: 0; /* Adicione esta linha para remover qualquer margem padrão */
+    /*margin: 0 0 0 -29%;*/
 }
 /* Estilo para o container .sobremim */
 .sobremim {
@@ -276,7 +279,7 @@ main {
     display: inline-flex; /* Alinha o texto e o ícone horizontalmente */
     align-items: center;
 }
-/* Adiciona espaço entre o texto e o ícone no botão */
+
 .vermais .icon {
     margin-right: 5px;
 }
@@ -284,6 +287,8 @@ main {
     box-shadow: 0 0 5px 2px rgba(0, 173, 111, 0.5);
 }
 /* FIM DO SOBRE MIM-----------------------------------------------------------------------*/
+
+
 footer {
     position: fixed;
     bottom: 0;
