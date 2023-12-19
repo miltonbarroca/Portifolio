@@ -365,12 +365,12 @@ main {
     position: relative;
     overflow: hidden;
     transition: box-shadow 0.3s ease-in-out;
-    display: flex;
+    display: block;
     align-items: center;
     justify-content: center; /* Centraliza o conteúdo horizontalmente */
-    max-width: 300px;
+    max-width: 200px;
     width: 100%;
-    margin: 10px auto;
+    margin: 2% auto;
 }
 
 #mostrarMaisBtn .icon {
@@ -381,11 +381,7 @@ main {
     box-shadow: 0 0 5px 2px rgba(0, 173, 111, 0.5);
 }
 
-/* Adicione margem entre os cards, exceto para o primeiro card */
-.card + .card:not(:first-child),
-#mostrarMaisBtn + .containerprojetos {
-    margin-top: 20px;
-}
+
 
 /*fim da seção de cards de projetos==================================*/
 footer {
