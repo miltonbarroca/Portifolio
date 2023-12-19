@@ -7,31 +7,40 @@ document.addEventListener('DOMContentLoaded', function() {
         button.textContent = extraContent.classList.contains('hidden') ? 'Ver mais' : 'Ver menos';
     });
 });
-//cards ocultos
-function mostrarMais() {
-    // Selecione os cards adicionais
-    var card4 = document.querySelector('.card4');
-    var card5 = document.querySelector('.card5');
-    var card6 = document.querySelector('.card6');
+//botao slider de cards
+let items = document.querySelectorAll('.slider .item');
+let next = document.getElementById('next');
+let prev = document.getElementById('prev');
 
-    // Alternar a visibilidade dos cards adicionais
-    if (card4.style.display === 'none') {
-        card4.style.display = 'block';
-        card5.style.display = 'block';
-        card6.style.display = 'block';
-
-        // Atualizar o texto do botão para "Mostrar Menos"
-        document.getElementById('mostrarMaisBtn').textContent = 'Mostrar Menos';
-    } else {
-        card4.style.display = 'none';
-        card5.style.display = 'none';
-        card6.style.display = 'none';
-
-        // Atualizar o texto do botão para "Mostrar Mais"
-        document.getElementById('mostrarMaisBtn').textContent = 'Mostrar Mais';
+let active = 3;
+function loadShow(){
+    let stt = 0;
+    items[active].style.transform = `none`;
+    items[active].style.zIndex = 1;
+    items[active].style.filter = 'none';
+    items[active].style.opacity = 1;
+    for(var i = active + 1; i < items.length; i++){
+        stt++;
+        items[i].style.transform = `translateX(${120*stt}px) scale(${1 - 0.2*stt}) perspective(16px) rotateY(-1deg)`;
+        items[i].style.zIndex = -stt;
+        items[i].style.filter = 'blur(5px)';
+        items[i].style.opacity = stt > 2 ? 0 : 0.6;
     }
-
-    // Ocupe o espaço vazio criado pelos cards adicionais
-    var containerProjetos = document.getElementById('containerprojetos');
-    containerProjetos.style.flexWrap = 'wrap';
+    stt = 0;
+    for(var i = active - 1; i >= 0; i--){
+        stt++;
+        items[i].style.transform = `translateX(${-120*stt}px) scale(${1 - 0.2*stt}) perspective(16px) rotateY(1deg)`;
+        items[i].style.zIndex = -stt;
+        items[i].style.filter = 'blur(5px)';
+        items[i].style.opacity = stt > 2 ? 0 : 0.6;
+    }
+}
+loadShow();
+next.onclick = function(){
+    active = active + 1 < items.length ? active + 1 : active;
+    loadShow();
+}
+prev.onclick = function(){
+    active = active - 1 >= 0 ? active - 1 : active;
+    loadShow();
 }
