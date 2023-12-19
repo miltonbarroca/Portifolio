@@ -313,17 +313,58 @@ main {
     background-color: rgb(11, 11, 11);
     border-radius: 0px;
     padding: 20px;
-    transition: 0.5s;
+    transition: background-color 0.5s ease;
     left: calc(50% - 110px);
     top: 100px;
     border: 3px solid transparent; /* Aumente o valor da borda para torná-la mais espessa */
     box-shadow: 0 0 2px rgb(0, 173, 111), 0 0 4px rgb(0, 173, 111), 0 0 6px rgb(0, 173, 111);
     transition: all 0.4s ease-in-out; /* Ajuste a transição para uma versão ainda mais suave */
     cursor: pointer; /* Adicione cursor pointer para indicar que são clicáveis */
+    background: linear-gradient(to bottom, rgba(11, 11, 11, 0.8), rgba(11, 11, 11, 1));
 }
+
+.item span{
+    width: 150px;
+    height: 150px;
+    /*background-color: red;*/
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.item span::before {
+    content: '';
+    position: absolute;
+    width: 250px;
+    height: 40px;
+    background-color: aquamarine;
+    transform: rotate(-45deg);
+}
+
+/*.item:not(:first-child)::before {
+    content: "Em Breve";
+    text-transform: uppercase;
+    position: absolute;
+    top: 25%;
+    left: 35%;
+    transform: translate(-50%, -50%) rotate(-43deg);
+    background-color: rgb(0, 173, 111);
+    color: #fff;
+    padding: 10px 50%;
+    font-size: 16px;
+    font-style: italic;
+    z-index: -1;
+    white-space: nowrap;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%); /* Ajustei a parte direita do clip-path para cortar */
+
+
 
 .item:hover {
     box-shadow: 0 0 4px rgb(0, 173, 111), 0 0 8px rgb(0, 173, 111), 0 0 12px rgb(0, 173, 111);
+    background-color: rgba(11, 11, 11, 0.9);
 }
 #next, #prev{
     position: absolute;
@@ -346,20 +387,6 @@ main {
 }
 #next:hover, #prev:hover {
     color: rgb(0, 173, 111); /* Adicione uma cor diferente no hover para destacar */
-}
-.upcoming {
-    content: "Em Breve";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) rotate(-45deg);
-    background-color: rgb(0, 173, 111);
-    color: #fff;
-    padding: 10px 70%;
-    font-size: 16px;
-    font-style: italic;
-    z-index: 1;
-    white-space: nowrap;
 }
 
 /*fim da seção de cards de projetos==================================*/
