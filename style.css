@@ -315,7 +315,7 @@ main {
     border-radius: 0px;
     padding: 20px;
     transition: background-color 0.5s ease;
-    left: calc(50% - 110px);
+    left: 39%;
     top: 20%;
     border: 3px solid transparent; /* Aumente o valor da borda para torná-la mais espessa */
     box-shadow: 0 0 2px rgb(0, 173, 111), 0 0 4px rgb(0, 173, 111), 0 0 6px rgb(0, 173, 111);
