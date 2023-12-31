@@ -409,18 +409,51 @@ main {
 }
 
 /*fim da seção de cards de projetos==================================*/
-#habilidades{
-    background-color: rgb(11, 11, 11);
+#habilidades {
     color: rgb(255, 255, 255);
-   /*padding: 50px;  Ajuste conforme necessário */
     text-align: center;
-    margin-bottom: 40%; /* Remova a margem inferior */
+    margin-bottom: 40px; /* Use valores fixos para melhor consistência */
+    margin-left: 10%; /* Ajuste conforme necessário */
+    margin-right: 10%; /* Ajuste conforme necessário */
     margin-top: 45%;
-    margin-left: 35%;
-    margin-top: 45%;
-    
 }
 
+.habilidades {
+    display: flex;
+    justify-content: space-around; /* Espaçamento uniforme entre os cards */
+}
+
+.card {
+    background-color: #202020;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin: 20px;
+    width: 200px; /* Largura dos cards ajustada para acomodar 4 cards em uma linha */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.card:hover {
+    box-shadow: 0 0 4px rgb(0, 173, 111), 0 0 8px rgb(0, 173, 111), 0 0 12px rgb(0, 173, 111);
+    background-color: rgba(11, 11, 11, 0.9);
+}
+
+.card h2 {
+    font-family: helvetica;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-family: helvetica;
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
 
 footer {
     position: fixed;
