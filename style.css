@@ -151,20 +151,10 @@ ul {
     .navigation ul li {
         padding: 0%;
     }
-    .slider {
-        margin-bottom: 10%;
-    }
-
     .item {
-        width: 90%;
-        height: auto;
-        top: 5%;
-    }
-
-    #next, #prev {
-        top: 40%;
-        right: 5%;
-        left: 5%;
+        
+        margin-left: -19.5%;
+        margin-top: 10%;
     }
 }
 
@@ -215,6 +205,23 @@ main {
     text-shadow: rgb(0, 173, 111) 0px 0px 10px;
     margin: 0 0 0 -15%; /* Use porcentagem para ajustar a margem à esquerda responsivamente */
 }
+.cursor {
+    font-size: 2rem;
+    color: rgb(0, 173, 111);
+    margin-left: 5px; /* Espaço entre o texto e o cursor */
+    top:-2px;
+    position: relative;
+    animation: blink 0.8s infinite;
+  }
+  
+  @keyframes blink {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+  }
 .socials {
     display: flex;
     gap: 1rem;
@@ -259,7 +266,7 @@ main {
     padding: 3rem 0px;
     margin-left: 0; /* ou ajuste conforme necessário */
     z-index: 0;
-    margin-bottom: 45%;
+    margin-bottom: 5%;
 }
 .hidden {
     display: none;
@@ -375,7 +382,6 @@ main {
     display: flex;
     -webkit-box-align: center;
     align-items: center;
-    gap: 11px;
     width: 100%;
     -webkit-box-pack: center;
     justify-content: center;
@@ -385,6 +391,8 @@ main {
     margin-bottom: 45%;
 }
 .item{
+    min-width: 350px;
+    min-height: 350px;
     color: #fff;
     position: absolute;
     width: 21%;
@@ -395,7 +403,7 @@ main {
     padding: 20px;
     transition: background-color 0.5s ease;
     left: 39%;
-    top: 20%;
+    top: 30%;
     border: 3px solid transparent; /* Aumente o valor da borda para torná-la mais espessa */
     box-shadow: 0 0 2px rgb(0, 173, 111), 0 0 4px rgb(0, 173, 111), 0 0 6px rgb(0, 173, 111);
     transition: all 0.4s ease-in-out; /* Ajuste a transição para uma versão ainda mais suave */
@@ -480,12 +488,13 @@ main {
     
 }
 #next{
-    top: 50%
-    left: unset;
-    right: 20%;
+    top: 50%;
+    right: 15%;
 }
 #prev {
-    left: 20%; /* Ajuste a posição do botão prev */
+    top: 50%;
+    left: 15%; /* Ajuste a posição do botão prev */   
+    
 }
 #next:hover, #prev:hover {
     color: rgb(0, 173, 111); /* Adicione uma cor diferente no hover para destacar */
@@ -498,7 +507,7 @@ main {
     align-items: center;
     background-color: rgb(11, 11, 11);
     color: rgb(255, 255, 255);
-    padding: 55px 0; /* Ajuste conforme necessário */
+    padding: 0 0; /* Ajuste conforme necessário */
     text-align: center;
    
 }
