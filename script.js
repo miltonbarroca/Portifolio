@@ -44,3 +44,17 @@ prev.onclick = function(){
     active = active - 1 >= 0 ? active - 1 : active;
     loadShow();
 }
+//menu hamburguer responsivo
+document.getElementById('mobile-menu').addEventListener('click', function () {
+    var navList = document.querySelector('.navigation ul');
+    navList.classList.toggle('show');
+});
+
+// Adiciona um evento de clique aos links para fechar o menu
+var navLinks = document.querySelectorAll('.navigation ul li a');
+navLinks.forEach(function(link) {
+    link.addEventListener('click', function() {
+        var navList = document.querySelector('.navigation ul');
+        navList.classList.remove('show');
+    });
+});
