@@ -11,6 +11,7 @@
 body {
     font-family: 'Saira', Arial, sans-serif;
     background-color: rgb(11, 11, 11);
+    overflow-x: hidden;
 }
 body, h1 {
     margin: 0;
@@ -328,6 +329,9 @@ main {
     align-items: center;
     transform: translateX(-50%);
 }
+.item h1{
+    color: #0AD76F;
+}
 .image-container {
     width: 110%;
     height: 50%; /* Ajuste conforme necessário */
@@ -412,37 +416,35 @@ main {
 /*fim da seção de cards de projetos==================================*/
 #certificaçoes {
     color: rgb(255, 255, 255);
-    text-align: center;
+    text-align: left;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 55% 10% 30%;
+    margin-top: 10%; /* Ajuste conforme necessário */
 }
 
 .certificados {
-    position: relative;
+    margin-top:50%
 }
+
 .certificado {
+    /*max-width: 300px;*/
+    text-align: left;
     color: #fff;
-    position: absolute;
-    width: 22rem;
-    height: 25rem;
-    text-align: justify;
+    width: 40rem;
+    height: 15rem;
     background-color: rgb(11, 11, 11);
-    border-radius: 10px;
+    border-radius: 4px;
     padding: 20px;
     transition: background-color 0.5s ease;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    border: 3px solid transparent;
     box-shadow: 0 0 2px rgb(0, 173, 111), 0 0 4px rgb(0, 173, 111), 0 0 6px rgb(0, 173, 111);
     cursor: pointer;
     background: linear-gradient(to bottom, rgba(11, 11, 11, 0.8), rgba(11, 11, 11, 1));
     display: flex;
     flex-direction: column;
-    align-items: center;
-    margin-top:50%
+    align-items: flex-start;
+    margin: 15% auto 0; /* Ajuste conforme necessário */
+
 }
 
 .certificado a {
@@ -453,18 +455,22 @@ main {
 
 .certificado h2 {
     color: #0AD76F;
-    margin-bottom: 5px; /* Ajuste conforme necessário */
 }
 
-.certificado p {
-    margin: 4px 0; /* Ajuste conforme necessário */
+.paragrafo {
+    margin: 2px;
+    text-align: left;
+    color: rgb(150, 150, 150);
+    
 }
-.certificado h2{
-    color: #0AD76F;
+.resposta{
+    color: #fff;
+    font-size: small;
 }
 .certificado a:hover {
     text-decoration: underline;
 }
+
 /*fim certificados=-=-=-=-=-=-==-=-=-=-=--===-==-=-=-=-=-*/
 
 #habilidades {
