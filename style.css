@@ -251,7 +251,9 @@ main {
 .icone:hover svg {
     fill: rgb(11, 11, 11);
 }
-
+h3 {
+  color: rgb(0, 173, 111);;  
+}
 /* FIM DA PRIMEIRA PAGINA-----------------------------------------------------------------------*/
 .sobremim {
     display: flex;
