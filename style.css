@@ -199,8 +199,9 @@ main {
     color: rgb(150, 150, 150); /* Cor mais clara para simular um comentário */
     font-style: italic; /* Itálico para indicar que é um comentário */
     font-size: 3rem;
-    display: flex;
+    display: center;
     align-items: center;
+    text-align: center;
 }
 
 .estilocomentario span {
@@ -409,34 +410,45 @@ main {
 }
 
 /*fim da seção de cards de projetos==================================*/
+#certificaçoes{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin-bottom: 30%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 55%;
+}
+
+
 #habilidades {
     color: rgb(255, 255, 255);
     text-align: center;
-    margin-bottom: 40px; /* Use valores fixos para melhor consistência */
-    margin-left: 10%; /* Ajuste conforme necessário */
-    margin-right: 10%; /* Ajuste conforme necessário */
-    margin-top: 45%;
+    margin-bottom: 30%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 55%;
 }
 
 .habilidades {
     display: flex;
-    justify-content: space-around; /* Espaçamento uniforme entre os cards */
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
+
 
 .card {
     background-color: #202020;
     border-radius: 8px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     padding: 20px;
-    margin: 20px;
-    width: 200px; /* Largura dos cards ajustada para acomodar 4 cards em uma linha */
+    margin: 10px 0px; /* Reduzi a margem para manter o espaçamento entre os cards */
+    width: 160px; /* Reduzi a largura dos cards */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    text-align: center;
+    text-align: center; /* Centraliza o texto dentro do card */
 }
-
 .card:hover {
     box-shadow: 0 0 4px rgb(0, 173, 111), 0 0 8px rgb(0, 173, 111), 0 0 12px rgb(0, 173, 111);
     background-color: rgba(11, 11, 11, 0.9);
@@ -444,17 +456,17 @@ main {
 
 .card h2 {
     font-family: helvetica;
-    font-size: 24px;
+    font-size: 12px;
     margin-bottom: 10px;
 }
 
 .card p {
     font-family: helvetica;
-    font-size: 18px;
+    font-size: 1.1rem;
     line-height: 1.5;
     margin-bottom: 20px;
 }
-
+/*----------------------------fim hablidades--------------*/
 footer {
     position: fixed;
     bottom: -1px; /* Ajuste negativo para trazer mais para cima */
