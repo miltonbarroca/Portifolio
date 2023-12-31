@@ -170,16 +170,17 @@ main {
 }
 
 .containermain {
-    width: 80%; /* Ajuste a largura conforme necessário */
-    max-width: 800px; /* Adicione uma largura máxima para controle em telas grandes */
-    margin: 0 0 0 -29%; /* Use porcentagem para ajustar a margem à esquerda responsivamente */
-    text-align: center; /* Centralize o texto */
+    width: 80%;
+    max-width: 800px;
+    margin: 2rem auto; /* Adicione alguma margem superior e centralize horizontalmente */
+    text-align: left; /* Alinhe o texto à esquerda */
 }
+
 .namelogocontainer {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centralize os itens na vertical */
-    margin: 2rem 0;
+    align-items: flex-start; /* Alinhe os itens à esquerda */
+    margin: 0;
 }
 .container .namelogocontainer {    
     width: 100%;
@@ -194,16 +195,15 @@ main {
 .milton {
     font-size: 3.7rem;
     color: rgb(255, 255, 255);
-    margin-bottom: -0.5rem; /* Reduz a margem inferior */
+    margin-bottom: -0.5rem;
 }
 
 .desenvolvedor {
     color: rgb(0, 173, 111);
     font-size: 2rem;
-    margin-top: -0.5rem; /* Reduz a margem superior */
+    margin-top: -0.2rem;
     position: relative;
     text-shadow: rgb(0, 173, 111) 0px 0px 10px;
-    margin: 0 0 0 -15%; /* Use porcentagem para ajustar a margem à esquerda responsivamente */
 }
 .cursor {
     font-size: 2rem;
@@ -222,13 +222,12 @@ main {
       opacity: 0;
     }
   }
-.socials {
+  .socials {
     display: flex;
-    gap: 1rem;
-    margin-top: 2rem; /* Adicione espaço acima das redes sociais */
-    margin: 0 0 0 -39%; /* Use porcentagem para ajustar a margem à esquerda responsivamente */
-    padding: 9px;
+    gap: 0.5rem; /* Reduza o espaçamento entre os ícones */
+    margin-top: -28px; /* Ajuste a margem superior */
 }
+
 .icone {
     cursor: pointer;
     height: 2.5rem;
@@ -236,22 +235,21 @@ main {
     border-radius: 5px;
     background-color: rgb(31, 31, 31);
     display: flex;
-    -moz-box-pack: center;
     justify-content: center;
-    -moz-box-align: center;
     align-items: center;
     padding: 0.5rem;
-          
 }
+
 .icone svg {
-    fill: white; /* Garanta que as cores do ícone sejam brancas */
+    fill: white;
 }
+
 .icone:hover {
-    background-color: rgb(0, 173, 111); /* Altera a cor de fundo ao passar o mouse */
+    background-color: rgb(0, 173, 111);
 }
 
 .icone:hover svg {
-    fill: rgb(11, 11, 11); /* Altera a cor do ícone ao passar o mouse */
+    fill: rgb(11, 11, 11);
 }
 
 /* FIM DA PRIMEIRA PAGINA-----------------------------------------------------------------------*/
@@ -307,15 +305,14 @@ main {
     color: rgb(255, 255, 255);
     padding: 50px 0; /* Ajuste conforme necessário */
     text-align: center;
-    margin-bottom: 0; /* Remova a margem inferior */
-    /*margin: 0 0 0 -29%;*/
+    margin-bottom: 10%;
+    margin-top: 10%;
 }
 /* Estilo para o container .sobremim */
 .sobremim, .titulo-projetos {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 15px;
 }
 /* Estilo para o texto principal */
 #about p {
@@ -502,30 +499,30 @@ main {
 
 /*fim da seção de cards de projetos==================================*/
 #certifications {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: rgb(11, 11, 11);
     color: rgb(255, 255, 255);
-    padding: 0 0; /* Ajuste conforme necessário */
     text-align: center;
-   
+    margin-bottom: 20%;
+
 }
 
 .certificados {
-    margin-top:5%;
-    margin-bottom: 5%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    
 }
 
 .certificado {
-    /*max-width: 300px;*/
+    flex: 1;
     text-align: left;
     color: #fff;
-    width: 40rem;
+    width: 15rem;
     height: 15rem;
     background-color: rgb(11, 11, 11);
     border-radius: 4px;
-    padding: 20px;
+    padding: 15px;
     transition: background-color 0.5s ease;
     box-shadow: 0 0 2px rgb(0, 173, 111), 0 0 4px rgb(0, 173, 111), 0 0 6px rgb(0, 173, 111);
     cursor: pointer;
@@ -533,8 +530,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin: 15% auto 0; /* Ajuste conforme necessário */
-
+    margin: 10px; /* Espaçamento entre os certificados */
 }
 
 .certificado a {
@@ -551,15 +547,17 @@ main {
     margin: 2px;
     text-align: left;
     color: rgb(150, 150, 150);
-    
 }
-.resposta{
+
+.resposta {
     color: #fff;
     font-size: small;
 }
+
 .certificado a:hover {
     text-decoration: underline;
 }
+
 
 /*fim certificados=-=-=-=-=-=-==-=-=-=-=--===-==-=-=-=-=-*/
 
