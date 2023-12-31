@@ -381,30 +381,6 @@ main {
     font-weight: 500;
     display: flex;
 }
-@media (max-width: 768px) {
-    .item {
-        max-width: 100%;
-    }
-}
-
-/*.item:not(:first-child)::before {
-    content: "Em Breve";
-    text-transform: uppercase;
-    position: absolute;
-    top: 25%;
-    left: 35%;
-    transform: translate(-50%, -50%) rotate(-43deg);
-    background-color: rgb(0, 173, 111);
-    color: #fff;
-    padding: 10px 50%;
-    font-size: 16px;
-    font-style: italic;
-    z-index: -1;
-    white-space: nowrap;
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%); /* Ajustei a parte direita do clip-path para cortar */
-
-
-
 .item:hover {
     box-shadow: 0 0 4px rgb(0, 173, 111), 0 0 8px rgb(0, 173, 111), 0 0 12px rgb(0, 173, 111);
     background-color: rgba(11, 11, 11, 0.9);
@@ -433,6 +409,19 @@ main {
 }
 
 /*fim da seção de cards de projetos==================================*/
+#habilidades{
+    background-color: rgb(11, 11, 11);
+    color: rgb(255, 255, 255);
+   /*padding: 50px;  Ajuste conforme necessário */
+    text-align: center;
+    margin-bottom: 40%; /* Remova a margem inferior */
+    margin-top: 45%;
+    margin-left: 35%;
+    margin-top: 45%;
+    
+}
+
+
 footer {
     position: fixed;
     bottom: -1px; /* Ajuste negativo para trazer mais para cima */
