@@ -266,7 +266,7 @@ h3 {
     padding: 3rem 0px;
     margin-left: 0; /* ou ajuste conforme necessário */
     z-index: 0;
-    margin-bottom: 5%;
+    margin-bottom: 10%;
 }
 .hidden {
     display: none;
@@ -362,7 +362,6 @@ h3 {
     display: inline-flex; /* Alinha o texto e o ícone horizontalmente */
     align-items: center;
 }
-
 .vermais .icon {
     margin-right: 5px;
 }
@@ -387,7 +386,7 @@ h3 {
     padding: 3rem 0px;
     margin-left: 0; /* ou ajuste conforme necessário */
     z-index: 0;
-    margin-bottom: 45%;
+    margin-bottom: 60%;
 }
 .item{
     min-width: 350px;
@@ -395,7 +394,7 @@ h3 {
     color: #fff;
     position: absolute;
     width: 21%;
-    height: 45%; /*altura do card*/
+    height: 40%; /*altura do card*/
     text-align: justify;
     background-color: rgb(11, 11, 11);
     border-radius: 0px;
@@ -422,7 +421,6 @@ h3 {
     overflow: hidden;
     position: relative;
     margin-top: -20px;
-    margin-bottom: 20px;
 }
 
 .portfolio-image {
@@ -500,10 +498,11 @@ h3 {
 }
 
 /*fim da seção de cards de projetos==================================*/
+
 #certifications {
     color: rgb(255, 255, 255);
     text-align: center;
-    margin-bottom: 20%;
+    margin-top: 30%;
 
 
 }
@@ -514,7 +513,7 @@ h3 {
     flex-direction: column;
     align-items: center;
     flex-wrap: wrap;
-    
+   
 }
 
 .certificado {
@@ -534,7 +533,7 @@ h3 {
     flex-direction: column;
     align-items: flex-start;
     margin: 10px; /* Espaçamento entre os certificados */
-    position: relative;
+    position: relative;    
 }
 .certificado a {
     color: #0AD76F;
